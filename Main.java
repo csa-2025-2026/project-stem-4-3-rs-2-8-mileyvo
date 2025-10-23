@@ -12,13 +12,34 @@ public class Main
     }
 
     // Problem 2
+    int counter = 1;
     for (int count = 17; count <= 73; count++)
     {
       System.out.print(count + " ");
-      if (count % 11 == 0)
+
+      if (count == 10)
       {
         System.out.println();
+        counter = 0;
       }
+      counter++;
     }
+
+    // Problem 3
+    int userInput = 23;
+    for (int i = userInput; i <= 50; i++)
+    {
+      System.out.print(i + " ");
+      if (counter == 5)
+      {
+        System.out.println();
+        counter = 0;
+      }
+      counter++;
+    }
+
+    // Problem 4
+
+
   }
 }
